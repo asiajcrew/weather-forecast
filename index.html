@@ -5,17 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div id="form">
-        <h1>Search for a city</h1>
-        <input id="user-input">
-        <button id="search-button">Search</button>
-        <!-- add ability to search with enter -->
-    </div>
-    <div id="display-results"></div>
-    <div id="forecast"></div>
-
+    <header>
+        <h1>
+            Weather Dashboard
+        </h1>
+    </header>
+    <div id="body">
+        <!-- left side panel -->
+        <div id="form">
+            <div id="search-form">
+                <h2>Search for a city:</h2>
+                <input id="user-input" placeholder="San Diego">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="input-history">
+                <button class="history-buttons" id="1"></button>
+                <button class="history-buttons" id="2"></button>
+                <button class="history-buttons" id="3"></button>
+                <button class="history-buttons" id="4"></button>
+                <button class="history-buttons" id="5"></button>
+                <button class="history-buttons" id="6"></button>
+                <button class="history-buttons" id="7"></button>
+                <button class="history-buttons" id="8"></button>
+            </div>
+        </div>
+        <!-- right side panel -->
+            <div id="weather-info">
+                <!-- current weather info -->
+                <h2 id="city-name">(placeholder)</h2>
+                <ul>
+                    <li id="current-temp">Temp: </li>
+                    <li id="current-wind">Wind: </li>
+                    <li id="current-humidity">Humidity:</li>
+                    <li id="current-UV">UV index: </li>
+                </ul>
+                <!-- 5 day forecast -->
+                <h3>5-day forecast:</h3>
+                <div id="forecast">
+                    <div class="day-card">
+                        <h4 id="day1">day 1</h4>
+                        <ul class="forecast-list">
+                            <li id="day1-temp">temp</li>
+                            <li id="day1-wind">wind</li>
+                            <li id="day1-humidity">humidity</li>
+                        </ul>
+                    </div>
+                    <div class="day-card">
+                        <h4 id="day2">day 2</h4>
+                        <ul class="forecast-list">
+                            <li id="day2-temp">temp</li>
+                            <li id="day2-wind">wind</li>
+                            <li id="day2-humidity">humidity</li>
+                        </ul>
+                    </div>
+                    <div class="day-card">
+                        <h4 id="day3">day 3</h4>
+                        <ul class="forecast-list">
+                            <li id="day3-temp">temp</li>
+                            <li id="day3-wind">wind</li>
+                            <li id="day3-humidity">humidity</li>
+                        </ul>
+                    </div>
+                    <div class="day-card">
+                        <h4 id="day4">day 4</h4>
+                        <ul class="forecast-list">
+                            <li id="day4-temp">temp</li>
+                            <li id="day4-wind">wind</li>
+                            <li id="day4-humidity">humidity</li>
+                        </ul>
+                    </div>
+                    <div class="day-card">
+                        <h4 id="day5">day 5</h4>
+                        <ul class="forecast-list">
+                            <li id="day5-temp">temp</li>
+                            <li id="day5-wind">wind</li>
+                            <li id="day5-humidity">humidity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
